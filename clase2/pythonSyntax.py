@@ -50,4 +50,6 @@ if anio <=2022:
 elif anio >= 1989:
     print ("el anio es mayor a 1989")
 else:
-print("el anio no cumple con los rangos de 1989 o 2022")    
+    print("el anio no cumple con los rangos de 1989 o 2022")
+
+# ESTRUCTURAS DE CONTROL WHILE     
