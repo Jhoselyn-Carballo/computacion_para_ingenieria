@@ -9,18 +9,21 @@ Created on Wed Feb  9 08:10:48 2022
 
 #invertir un nombre
 
-def invertirNombre(nombre):
-    nombreInvertido=0
-    while nombre > 0:
-        nombreInvertido= 10 * nombreInvertido + nombre %10
-        nombre//=10
-    return nombreInvertido
+def es_palindromo(cadena):
+    posicion_izquierda = 0
+    posicion_derecha = len(cadena) - 1
+    
+    while posicion_derecha >= posicion_izquierda:
+        if not cadena[posicion_izquierda] == cadena[posicion_derecha]:
+            return False
+        
+        posicion_izquierda += 1
+        posicion_derecha += 1
+        
+    return True
 
-entrada = int(input("ingrese la palabra:"))
-nomInv = invertirNombre(entrada)
-if entrada == nomInv:
-    print("el nombre es palindromo")
-else:
-    print("el nombre no es palindromo")
+print(es_palindromo('ana'))
+
+
 
 
